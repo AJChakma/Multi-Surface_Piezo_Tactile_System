@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TDialogCalibrage</class>
+ <widget class="QDialog" name="TDialogCalibrage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>405</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calibrage :</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="m_LabelLosange">
+     <property name="text">
+      <string>Losange :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="2">
+    <widget class="QComboBox" name="m_ComboBoxLosange">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Choisissez une des tailles par défaut les champs&lt;/p&gt;&lt;p&gt;se rempliront automatiquement.&lt;/p&gt;&lt;p&gt;Sinon choisissez vous même vos dimensions avec&lt;/p&gt;&lt;p&gt;l'option Taille personnalisée&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="m_LabelDistance1">
+     <property name="text">
+      <string>Distance N/S :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" colspan="3">
+    <widget class="QLineEdit" name="m_LineeditDistance1">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Distance entre les capteurs Nord/Sud&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="6">
+    <widget class="QLabel" name="m_LabelUnitDistance1">
+     <property name="text">
+      <string>Mm</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QLabel" name="m_LabelDistance2">
+     <property name="text">
+      <string>Distance E/O :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2" colspan="3">
+    <widget class="QLineEdit" name="m_LineEditDistance2">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Distance entre les capteur Est/Ouest&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6">
+    <widget class="QLabel" name="m_LabelUnitDistance2">
+     <property name="text">
+      <string>Mm</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="m_LabelPrecision">
+     <property name="text">
+      <string>Résolution</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2" colspan="3">
+    <widget class="QLineEdit" name="m_LineEditPrecision"/>
+   </item>
+   <item row="3" column="6">
+    <widget class="QLabel" name="m_LabelUnitPrecision">
+     <property name="text">
+      <string>Mm</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="3">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Temps horizontal</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4" colspan="3">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Temps vertical</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="m_ButtonN">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lance le calibrage du capteur Nord.&lt;/p&gt;&lt;p&gt;Cliquez sur le bouton et tapez le plus proche possible du capteur.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Capteur N</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1" colspan="2">
+    <widget class="QLineEdit" name="m_LineEditN1">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="font">
+      <font>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QLabel" name="m_LabelUniteN1">
+     <property name="text">
+      <string>µs</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="4">
+    <widget class="QLineEdit" name="m_LineEditN2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="5">
+    <widget class="QLabel" name="m_LabelUniteN2">
+     <property name="text">
+      <string>µs</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="6">
+    <widget class="QPushButton" name="m_ButtonVN">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Valide la mesure du capteur Nord&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Valider</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QPushButton" name="m_ButtonS">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lance le calibrage du capteur Sud.&lt;/p&gt;&lt;p&gt;Cliquez sur le bouton et tapez le plus proche possible du capteur.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Capteur S</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1" colspan="2">
+    <widget class="QLineEdit" name="m_LineEditTS1">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="3">
+    <widget class="QLabel" name="m_LabelUniteS1">
+     <property name="text">
+      <string>µs</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="4">
+    <widget class="QLineEdit" name="m_LineEditTS2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="5">
+    <widget class="QLabel" name="m_LabelUniteS2">
+     <property name="text">
+      <string>µs</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="6">
+    <widget class="QPushButton" name="m_ButtonVS">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Valide la mesure du capteur Sud.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Valider</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QPushButton" name="m_ButtonE">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lance le calibrage du capteur Est.&lt;/p&gt;&lt;p&gt;Cliquez sur le bouton et tapez le plus proche possible du capteur.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Capteur E</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1" colspan="2">
+    <widget class="QLineEdit" name="m_LineEditE1">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="3">
+    <widget class="QLabel" name="m_LabelUniteE1">
+     <property name="text">
+      <string>µs</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="4">
+    <widget class="QLineEdit" name="m_LineEditTE2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="5">
+    <widget class="QLabel" name="m_LabelUniteE2">
+     <property name="text">
+      <string>µs</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="6">
+    <widget class="QPushButton" name="m_ButtonVE">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Valide la mesure du capteur Est.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Valider</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QPushButton" name="m_ButtonO">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lance le calibrage du capteur Ouest.&lt;/p&gt;&lt;p&gt;Cliquez sur le bouton et tapez le plus proche possible du capteur.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Capteur O</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1" colspan="2">
+    <widget class="QLineEdit" name="m_LineEditTO1">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="3">
+    <widget class="QLabel" name="m_LabelUniteO1">
+     <property name="text">
+      <string>µs</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="4">
+    <widget class="QLineEdit" name="m_LineEditO2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="5">
+    <widget class="QLabel" name="m_LabelUniteO2">
+     <property name="text">
+      <string>µs</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="6">
+    <widget class="QPushButton" name="m_ButtonVO">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Valide la mesure du capteur Ouest.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Valider</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="2" colspan="4">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Confirmer les données de calibrage.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#dc1313;&quot;&gt;ATTENTION &lt;/span&gt;Vous ne pouver pas confirmer tant que tous les capteurs n'ont pas de données de calibrage.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+     <property name="centerButtons">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>TDialogCalibrage</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>261</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>TDialogCalibrage</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>210</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>53</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

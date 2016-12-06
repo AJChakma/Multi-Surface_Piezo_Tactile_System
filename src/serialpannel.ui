@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SerialPannel</class>
+ <widget class="QWidget" name="SerialPannel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>346</width>
+    <height>263</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="5" column="3">
+    <widget class="QRadioButton" name="m_ModeTable">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;L'ordinateur d'étermine la position par l'utilisation d'une base donnée ou toutes les positions ont été enregistrées&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Calcul par Table</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="6">
+    <widget class="QPushButton" name="m_MoniteurSerieButton">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Démarre une interface permettant de voir&lt;/p&gt;&lt;p&gt;les données circulant dans la liaison série.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>MONITEUR SERIE</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3" colspan="3">
+    <widget class="QLabel" name="m_DeviceState">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Affiche l'état de la connexion entre le dispositif série et l'application.&lt;/p&gt;&lt;p&gt;close : aucune connection&lt;/p&gt;&lt;p&gt;open : connection en cours&lt;/p&gt;&lt;p&gt;unknow : état généré en cas de problème ou de dysfonctionnement de l'application ou du dispositif série. Redémarrez l'application pour tenter de résoudre le problème.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QLabel" name="m_PortName">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Entrez le port série sur lequel est branché la carte.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Port :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3" colspan="2">
+    <widget class="QLineEdit" name="m_AskPortName">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Tapez le nom du port série que vous souhaitez utiliser.&lt;/p&gt;&lt;p&gt;Si un dispositif série est trouvé il est choisi par défaut au démarrage.&lt;/p&gt;&lt;p&gt;Si plusieurs sont trouvés un choix vous ait demandé.&lt;/p&gt;&lt;p&gt;Si aucun n'est trouvé 'Unknow' est affiché.&lt;/p&gt;&lt;p&gt;Exemple de ports série :&lt;/p&gt;&lt;p&gt;Windows : COM2, COM4...&lt;/p&gt;&lt;p&gt;Linux: ttyACM0, ttyS0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="4">
+    <widget class="QLabel" name="m_ModeDeCommunication">
+     <property name="text">
+      <string>Mode de Communication</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3" colspan="3">
+    <widget class="QLabel" name="m_DeviceInfo">
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QLabel" name="m_DeviceInfoLabel">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Affiche des données disponible sur&lt;/p&gt;&lt;p&gt;le dispositif série connecté&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Device :</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QLabel" name="m_DeviceStateLabel">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Affiche l'état de la connection :&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#de1515;&quot;&gt;close&lt;/span&gt; : Connection désactivée&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#50f311;&quot;&gt;open&lt;/span&gt; : Connection active&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#242dd4;&quot;&gt;unknow&lt;/span&gt; : Situation inconnue (Généralement à cause d'un problème)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Etat</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" colspan="2">
+    <widget class="QLabel" name="m_Liaison_serie">
+     <property name="text">
+      <string>Liaison Série</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="3">
+    <widget class="QRadioButton" name="m_ModeCalc">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;La carte Arduino calcule par un algorthime la position&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;ou vous avez tapé&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Calcul de position</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>m_AskPortName</tabstop>
+  <tabstop>m_ModeCalc</tabstop>
+  <tabstop>m_ModeTable</tabstop>
+  <tabstop>m_MoniteurSerieButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TSerialMonitor</class>
+ <widget class="QWidget" name="TSerialMonitor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Serial Monitor</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="2">
+    <widget class="QTextEdit" name="m_TextArea">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QScrollBar" name="m_ScrollBar">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QRadioButton" name="m_RBBrut">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Affiche ce que reçoit l'arduino au Kilomètre, sans mise en forme&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; color:#f80f0f;&quot;&gt;ATTENTION&lt;/span&gt; : Si l'arduino n'a pas de délais, le programme plante !&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Affichage brut</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QRadioButton" name="m_RBDoubleInt">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Affiche les données reçues par arduino avec un mise en forme double&lt;/p&gt;&lt;p&gt;entier :&lt;/p&gt;&lt;p&gt;(entier1 ; entier2)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Affichage double entier</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QRadioButton" name="m_RBModeUn">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Bouton disponible pour une future implémentation&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>AddMode1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QRadioButton" name="m_RBModeDeux">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Bouton disponible pour une future implémentation&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>AddMode2</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

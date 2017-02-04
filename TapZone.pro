@@ -3,33 +3,34 @@ QT += gui
 QT+= core
 QT += serialport
 
+INCLUDEPATH= ./incld/
 HEADERS += \
-    display.h \
-    mainwindow.h \
-    dialogsetpoint.h \
-    serialpannel.h \
-    tserial.h \
-    tserialmonitor.h \
-    tdialogcalibrage.h \
-    initialisation.h \
-    fonction_traitement.h
+    incld/display.h \
+    incld/mainwindow.h \
+    incld/dialogsetpoint.h \
+    incld/serialpannel.h \
+    incld/tserial.h \
+    incld/tserialmonitor.h \
+    incld/tdialogcalibrage.h \
+    incld/initialisation.h \
+    incld/fonction_traitement.h
 
 SOURCES += \
-    display.cpp \
-    main.cpp \
-    mainwindow.cpp \
-    dialogsetpoint.cpp \
-    serialpannel.cpp \
-    tserial.cpp \
-    tserialmonitor.cpp \
-    tdialogcalibrage.cpp \
-    initialisation.c \
-    fonction_traitement.c
+    src/display.cpp \
+    src/main.cpp \
+    src/mainwindow.cpp \
+    src/dialogsetpoint.cpp \
+    src/serialpannel.cpp \
+    src/tserial.cpp \
+    src/tserialmonitor.cpp \
+    src/tdialogcalibrage.cpp \
+    src/initialisation.c \
+    src/fonction_traitement.c
 
 DISTFILES += \
     Notes
 
 FORMS += \
-    serialpannel.ui \
-    tserialmonitor.ui \
-    tdialogcalibrage.ui
+    src/ui/serialpannel.ui \
+    src/ui/tserialmonitor.ui \
+    src/ui/tdialogcalibrage.ui
